@@ -20,3 +20,8 @@ ASSGINMENT NO 2:
 4>what isn't possible to see the first five rows of a table?
 
 ->
+-when you INSERT into a table ,whenever the system finds the free space in the Database server HD,it will store the row there.
+-Reason that is RDBMS does this ,is to speed up the INSERT stmt.
+-When you select a table ,the order of rows in the output depends on the row address and it will always be in ascending order of row address.
+-when you UPDATE a row ,if the row length is increasing then the entire may be moved to some other address,later when you select from the table you will find the row at some other position in the ouput.
+-hence it is not possible to view the first or last 'n' rows.
