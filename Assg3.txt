@@ -1,0 +1,41 @@
+ASSGINMENT NO 3:
+
+
+#####################################
+
+1>Does ANSI recognize the data type DATE?
+
+->
+
+default date format : yyyy-mm-dd 
+eg: - 2007-02-28
+
+where: 
+yyyy - Is a four-digit year value. All four digits are required.
+mm - Is a two-digit month value between 01 to 12.
+dd - Is a two-digit day value between 01 to 31.
+
+Range : 0001-01-01 through 9999-12-31
+
+
+===============================================
+
+2>which subdivision of SQL is used to insert values in tables?
+
+->
+To insert data into table you can use DML i.e data maniplation language INSERT command.
+
+-It is possible to write the INSERT INTO statement in two ways.
+1.The first way specifies both the column names and the values to be inserted:
+
+syntax : -
+	
+	INSERT INTO table_name (column1, column2, column3, ...)
+	VALUES (value1, value2, value3, ...);
+
+2.If you are adding values for all the columns of the table, you do not need to specify the column names in the SQL query. 
+However, make sure the order of the values is in the same order as the columns in the table.
+
+ The INSERT INTO syntax would be as follows:
+	INSERT INTO table_name
+	VALUES (value1, value2, value3, ...); 
