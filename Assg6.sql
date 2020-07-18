@@ -30,7 +30,11 @@ select *from customers where cname>='A' and cname<'H';
 select *from customers where cname like 'C%';
 
 
+
+
 ====================================================================
 #5>Write a query that selects all orders except those with zeroes or NULLs in the amt fields.
 
-select *from orders where amt="0" or amt="NULL"; 
+select *from orders where amt!="0" or amt!="NULL"; 
+
+select *from  orders where amt not in('0','null');
