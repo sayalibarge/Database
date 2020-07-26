@@ -10,10 +10,10 @@ select *from orders;
 
 
 
-select cname,city ,rating 'High Rating' from customers
-where rating >= 200 
+select cname,city ,'High Rating' rating from customers
+where rating > 200 
 union 
-select cname,city,rating 'Low Rating' from customers 
+select cname,city, 'Low Rating' rating from customers 
 where rating <= 200;
 ###########################################################################
 
@@ -36,8 +36,10 @@ select snamee,snum from salespeople where snum in
 
 select snum from salespeople where city = 'San jose' 
 union
-select cnum from customers where city = 'San jose'
-union 
-select snum from orders where odate = '1990-10-03';
-
+select  DISTINCT snum from orders
+where  snum IN
+    (select  snum from orders
+     where odate LIKE '1990-10-03%');
+     
+    
 #############################################################
